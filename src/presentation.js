@@ -12,82 +12,115 @@ import {
   Quote,
   Slide,
   Text,
+  Notes,
+  Image
 } from 'spectacle';
 
 // Import theme
-import createTheme from 'spectacle/lib/themes/default';
-
+import createTheme from 'spectacle-theme-nova';
 // Require CSS
 require('normalize.css');
 
-const theme = createTheme(
-  {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quartenary: '#CECECE',
-  },
-  {
-    primary: 'Montserrat',
-    secondary: 'Helvetica',
-  }
-);
+const theme = createTheme();
 
 export default class Presentation extends React.Component {
   render() {
     return (
       <Deck
-        transition={['zoom', 'slide']}
+        transition={['fade']}
         transitionDuration={500}
         theme={theme}
       >
-        <Slide transition={['zoom']} bgColor="primary">
+        <Slide>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            Debugger JavaScript
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
+
+          <Notes>
+            outils pas assez connu je trouve, car à mettre entre toutes les mains
+          </Notes>
+
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
-        </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
+        
+        <Slide>
+          <Heading >
+            QUI SUIS JE ?
           </Heading>
           <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+              <ListItem>
+                Loïc BOURG (@LoicBourg63) 
+              </ListItem>
+              <ListItem>
+                Développeur PHP 
+              </ListItem>
+              <ListItem>
+                Travaille à ITNETWORK 
+              </ListItem>
           </List>
         </Slide>
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+
+        <Slide>
+            <Heading size={3} >
+                POURQUOI UTILISER UN DEBUGGER ?
+
+                <Notes>
+                    <p> console.log bien jusqu'a un certain point </p>
+                    <p> état du DOM juste avant / aprés une opération </p>
+                    <p> info call stack / valeurs variables </p>
+                </Notes>
+
+            </Heading>
+        </Slide>
+
+        <Slide>
+          image chasse au bug ?
+        </Slide>
+
+        <Slide>
+          compliqué à installer ? 
+
+
+
+            <p> peur compliqué à utiliser ? ( bower, webpack, npm, yarn, parcel, version de node....) </p>
+            <p> besoin: navigateur, éditeur de texte, et clavier pour taper debugger; </p>
+
+
+          DEBUGGER;
+        </Slide>
+
+        <Slide>
+            exemple 1: debugger; boucle simple
+        </Slide>
+
+        <Slide>
+            exemple 2: debugger avec lib 
+            -> call stack
+            -> scope
+            -> step over
+            -> step out
+            -> console scope 
+            -> jquery montrer debug avant / aprés état du dom
+        </Slide>
+
+        <Slide>
+            exemple 3: Dom breakpoint -> on ne sait pas quel script édite le dom
+        </Slide>
+
+        <Slide>
+            exemple 4: event listener break points
+        </Slide>
+
+        <Slide>
+            exemple 5: bug avec ajout 
+        </Slide>
+
+        <Slide>
+            exemple 5: connect VS CODE ? 
+        </Slide>
+
+
+        <Slide>
+            Questions ?
         </Slide>
       </Deck>
     );
