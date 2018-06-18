@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var hellô = 'Hello';
 
-    debugger;
+    // debugger;
     $('#hello').text(hello);
     // debugger;
 });
