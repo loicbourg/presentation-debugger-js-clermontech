@@ -21,4 +21,4 @@ http://localhost:3000
 
 url notes 
 
-http://localhost:3000/#/?presenter&timer&_k=wbyhif
+http://localhost:3000/#/3?presenter&timer

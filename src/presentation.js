@@ -77,9 +77,17 @@ export default class Presentation extends React.Component {
             </Heading>
 
                 <Notes>
-                    <p> console.log bien jusqu'a un certain point </p>
-                    <p> état du DOM juste avant / aprés une opération </p>
-                    <p> info call stack / valeurs variables </p>
+                    <ol>
+                        <li>
+                            <h2>console.log bien jusqu'a un certain point</h2>
+                        </li>
+                        <li>
+                            <h2>état du DOM juste avant / aprés une opération</h2>
+                        </li>
+                        <li>
+                            <h2> info call stack / valeurs variables </h2>
+                        </li>
+                    </ol>
                 </Notes>
 
         </Slide>
@@ -90,8 +98,14 @@ export default class Presentation extends React.Component {
             </Heading>
 
             <Notes>
-            <p> peur compliqué à utiliser ? ( bower, webpack, npm, yarn, parcel, version de node....) </p>
-            <p> besoin: navigateur, éditeur de texte, et clavier pour taper debugger; </p>
+                <ol>
+                    <li>
+                        <h2>peur compliqué à utiliser ? ( bower, webpack, npm, yarn, parcel, version de node....)</h2>
+                    </li>
+                    <li>
+                        <h2> besoin: navigateur, éditeur de texte, et clavier pour taper debugger; </h2>
+                    </li>
+                </ol>
             </Notes>
         </Slide>
 
@@ -107,8 +121,11 @@ export default class Presentation extends React.Component {
             </Heading>
 
             <Notes>
-                debugger;
-                hover souris valeur variable
+                <ol>
+                    <li>
+                        <h2>hover souris valeur variable</h2>
+                    </li>
+                </ol>
             </Notes>
 
         </Slide>
@@ -119,9 +136,19 @@ export default class Presentation extends React.Component {
             </Heading>
 
             <Notes>
-                -> stop avant opération sur le dom
-                -> scope
-                -> hover souris argument: typo
+                <ol>
+                    <li>
+                        <h2>stop avant opération sur le dom</h2>
+                    </li>
+                    <li>
+                        <h2>scope</h2>
+                    </li>
+                    <li>
+                        <h2>hover souris argument: typo</h2>
+                    </li>
+
+                </ol>
+
             </Notes>
         </Slide>
 
@@ -131,10 +158,18 @@ export default class Presentation extends React.Component {
               </Heading>
 
               <Notes>
-                  Dom breakpoint
-                  -> on ne sait pas quel script édite le dom
-                  -> utils monstrueux
-                  -> ctrl + f ne donne rien
+                  <h2>Dom breakpoint</h2>
+                  <ol>
+                      <li>
+                          <h2>on ne sait pas quel script édite le dom</h2>
+                      </li>
+                      <li>
+                          <h2>utils monstrueux</h2>
+                      </li>
+                      <li>
+                          <h2>ctrl + f ne donne rien</h2>
+                      </li>
+                  </ol>
 
               </Notes>
           </Slide>
@@ -145,9 +180,15 @@ export default class Presentation extends React.Component {
               </Heading>
 
               <Notes>
-                  Event breakpoint
-                  -> on ne sait pas quel script édite le dom
-                  -> Source -> Event listener break -> Mouse -> click
+                  <h2>Event breakpoint</h2>
+                  <ol>
+                      <li>
+                          <h2>on ne sait pas quel script édite le dom</h2>
+                      </li>
+                      <li>
+                          <h2>Source -> Event listener break -> Mouse -> click</h2>
+                      </li>
+                  </ol>
 
               </Notes>
           </Slide>
@@ -158,17 +199,39 @@ export default class Presentation extends React.Component {
               </Heading>
 
               <Notes>
-                  Bug calculatrice
-                  -> Event breakpoint ->  Control -> submit
-                  -> step over jusqu'a updateResult
-                  -> watch typeof value1
-                  -> console test value1
+                  <h2>Bug calculatrice</h2>
+                  <ol>
+                      <li>
+                          <h2>Event breakpoint ->  Control -> submit</h2>
+                      </li>
+                      <li>
+                          <h2>step over jusqu'a updateResult</h2>
+                      </li>
+                      <li>
+                          <h2>watch typeof value1</h2>
+                      </li>
+                      <li>
+                          <h2>console test value1 + value2 avec et sans parseInt</h2>
+                      </li>
+                  </ol>
 
               </Notes>
           </Slide>
 
           <Slide bgImage="images/ok.webp" >
+              <Notes>
+                  <ol>
+                      <li>
+                          <h2>Outils puissant ayant beaucoup de possibilités</h2>
+                      </li>
+                      <li>
+                          <h2>Utilisez le quand vous avez besoin d'observer vos scripts !</h2>
+                      </li>
+                  </ol>
+                  <h2>
 
+                  </h2>
+              </Notes>
           </Slide>
 
         <Slide bgColor="white" bgRepeat="no-repeat" bgSize="contain"  bgImage="images/question3.jpg" >
