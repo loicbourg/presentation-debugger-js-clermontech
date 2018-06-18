@@ -28,9 +28,6 @@ function add(evt) {
         return;
     }
 
-
-
-
     var result = computeResult();
 
     updateResult(result);
